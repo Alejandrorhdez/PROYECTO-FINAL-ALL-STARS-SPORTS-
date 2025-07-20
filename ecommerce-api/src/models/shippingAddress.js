@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 
 const shippingAddressSchema = new mongoose.Schema({
     user:{
-            type:mongoose.Schema.Types.ObjectId,
+            type:mongoose.Schema.Types.ObjectId, //sale de la base de datos
             ref:'User',
             required:true
         },

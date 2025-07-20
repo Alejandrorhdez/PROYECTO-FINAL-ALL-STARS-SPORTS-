@@ -2,13 +2,13 @@ import mongoose from "mongoose";
 
 const cartSchema = new mongoose.Schema({
     user:{
-        type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.Schema.Types.ObjectId, //sale de la base de datos
         ref:'User',
         require:true,
     },
     products:[
         {product:{
-            type:mongoose.Schema.Types.ObjectId,
+            type:mongoose.Schema.Types.ObjectId, //sale de la base de datos
         ref:'Product',
         require: true
         },
